@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ITBA Portfolio - My Skills</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#0A2540",
+              "accent": "#45B39D",
+              "background-light": "#F2F2F2",
+              "background-dark": "#101622",
+              "card-light": "#FFFFFF",
+              "card-dark": "#1A2436",
+              "text-light": "#2C3E50",
+              "text-dark": "#E0E6F1",
+              "subtext-light": "#5D6D7E",
+              "subtext-dark": "#94A3B8"
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.25rem",
+              "lg": "0.5rem",
+              "xl": "0.75rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+    <script>
+        function toggleTheme() {
+            document.documentElement.classList.toggle('dark');
+        }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5 sm:px-10 md:px-20 lg:px-40">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-700 px-6 sm:px-10 py-4 bg-card-light dark:bg-card-dark rounded-xl sticky top-5 z-10 shadow-sm">
+<div class="flex items-center gap-4 text-text-light dark:text-text-dark">
+<div class="size-6 text-primary dark:text-accent">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em]">ITBA Portfolio</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-accent text-sm font-medium leading-normal" href="index.html">Home</a>
+<a class="text-primary dark:text-accent text-sm font-bold leading-normal" href="skills.html">Skills</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-accent text-sm font-medium leading-normal" href="portfolio.html">Projects</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-accent text-sm font-medium leading-normal" href="about.html">About</a>
+<a class="text-subtext-light dark:text-subtext-dark hover:text-primary dark:hover:text-accent text-sm font-medium leading-normal" href="contact.html">Contact</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-colors">
+<span class="truncate">Download CV</span>
+</button>
+<button onclick="toggleTheme()" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-colors">
+<span class="truncate">Toggle Theme</span>
+</button>
+</div>
+<div class="md:hidden">
+<button class="p-2 rounded-md text-subtext-light dark:text-subtext-dark">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="mt-12 px-4">
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex w-full flex-col gap-3">
+<p class="text-primary dark:text-accent text-4xl font-black leading-tight tracking-[-0.033em]">My Skills &amp; Expertise</p>
+<p class="text-subtext-light dark:text-subtext-dark text-base font-normal leading-normal max-w-2xl">A comprehensive overview of my technical abilities, methodologies, and the tools I use to analyze requirements, drive research, and deliver impactful results.</p>
+</div>
+</div>
+<div class="flex gap-3 p-3 flex-wrap pr-4 mt-6">
+<div class="flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-accent/20 pl-4 pr-4">
+<p class="text-primary dark:text-accent text-sm font-bold leading-normal">All</p>
+</div>
+<div class="flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-card-light dark:bg-card-dark pl-4 pr-4 hover:bg-primary/10 dark:hover:bg-accent/10 transition-colors">
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-medium leading-normal">Technical</p>
+</div>
+<div class="flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-card-light dark:bg-card-dark pl-4 pr-4 hover:bg-primary/10 dark:hover:bg-accent/10 transition-colors">
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-medium leading-normal">Business Analysis</p>
+</div>
+<div class="flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-lg bg-card-light dark:bg-card-dark pl-4 pr-4 hover:bg-primary/10 dark:hover:bg-accent/10 transition-colors">
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-medium leading-normal">Tools</p>
+</div>
+</div>
+<div class="flex flex-col gap-10 mt-8">
+<section>
+<h2 class="text-primary dark:text-accent text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Technical Skills</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-card-light dark:bg-card-dark p-6 rounded-xl shadow-sm">
+<div class="flex flex-col gap-3 p-4 rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors">
+<div class="flex gap-6 justify-between">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">SQL</p>
+<p class="text-text-light dark:text-text-dark text-sm font-normal leading-normal">90%</p>
+</div>
+<div class="rounded-full bg-gray-200 dark:bg-gray-700 h-2"><div aria-label="Proficiency: 90%" class="h-2 rounded-full bg-accent" style="width: 90%;"></div></div>
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal">Expert</p>
+</div>
+<div class="flex flex-col gap-3 p-4 rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors">
+<div class="flex gap-6 justify-between">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Python (Pandas, NumPy)</p>
+<p class="text-text-light dark:text-text-dark text-sm font-normal leading-normal">75%</p>
+</div>
+<div class="rounded-full bg-gray-200 dark:bg-gray-700 h-2"><div aria-label="Proficiency: 75%" class="h-2 rounded-full bg-accent" style="width: 75%;"></div></div>
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal">Advanced</p>
+</div>
+<div class="flex flex-col gap-3 p-4 rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors">
+<div class="flex gap-6 justify-between">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Data Modeling</p>
+<p class="text-text-light dark:text-text-dark text-sm font-normal leading-normal">85%</p>
+</div>
+<div class="rounded-full bg-gray-200 dark:bg-gray-700 h-2"><div aria-label="Proficiency: 85%" class="h-2 rounded-full bg-accent" style="width: 85%;"></div></div>
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal">Expert</p>
+</div>
+<div class="flex flex-col gap-3 p-4 rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors">
+<div class="flex gap-6 justify-between">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">API Integration</p>
+<p class="text-text-light dark:text-text-dark text-sm font-normal leading-normal">70%</p>
+</div>
+<div class="rounded-full bg-gray-200 dark:bg-gray-700 h-2"><div aria-label="Proficiency: 70%" class="h-2 rounded-full bg-accent" style="width: 70%;"></div></div>
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal">Advanced</p>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-primary dark:text-accent text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Business Analysis &amp; Research Skills</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-card-light dark:bg-card-dark p-6 rounded-xl shadow-sm">
+<div class="flex flex-col gap-3 p-4 rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors">
+<div class="flex gap-6 justify-between">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Requirement Elicitation</p>
+<p class="text-text-light dark:text-text-dark text-sm font-normal leading-normal">95%</p>
+</div>
+<div class="rounded-full bg-gray-200 dark:bg-gray-700 h-2"><div aria-label="Proficiency: 95%" class="h-2 rounded-full bg-accent" style="width: 95%;"></div></div>
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal">Expert</p>
+</div>
+<div class="flex flex-col gap-3 p-4 rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors">
+<div class="flex gap-6 justify-between">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Stakeholder Management</p>
+<p class="text-text-light dark:text-text-dark text-sm font-normal leading-normal">90%</p>
+</div>
+<div class="rounded-full bg-gray-200 dark:bg-gray-700 h-2"><div aria-label="Proficiency: 90%" class="h-2 rounded-full bg-accent" style="width: 90%;"></div></div>
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal">Expert</p>
+</div>
+<div class="flex flex-col gap-3 p-4 rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors">
+<div class="flex gap-6 justify-between">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Agile &amp; Scrum Methodologies</p>
+<p class="text-text-light dark:text-text-dark text-sm font-normal leading-normal">85%</p>
+</div>
+<div class="rounded-full bg-gray-200 dark:bg-gray-700 h-2"><div aria-label="Proficiency: 85%" class="h-2 rounded-full bg-accent" style="width: 85%;"></div></div>
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal">Expert</p>
+</div>
+<div class="flex flex-col gap-3 p-4 rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors">
+<div class="flex gap-6 justify-between">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">User Research &amp; Personas</p>
+<p class="text-text-light dark:text-text-dark text-sm font-normal leading-normal">80%</p>
+</div>
+<div class="rounded-full bg-gray-200 dark:bg-gray-700 h-2"><div aria-label="Proficiency: 80%" class="h-2 rounded-full bg-accent" style="width: 80%;"></div></div>
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal">Advanced</p>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-primary dark:text-accent text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Tools &amp; Platforms</h2>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl shadow-sm flex flex-wrap gap-8 justify-center items-center">
+<div class="flex flex-col items-center gap-2 text-center p-4 w-28 h-28 justify-center rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors">
+<img class="h-10 object-contain" data-alt="Jira Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHFbjr4dh20--FdvMNf_Gs9vivviOblm4o5EBDfb-kowcCRf2tyelzme1DKVK5RxfuB5qt1-yF9Rjgkc_e_B0pcF9Fd5i1b91IzlpjNHA7-0x_5Lp-NGQ7jCHNjneifPFV1_iWaojZqI10Xvz7XwhkT8cmFFjgmQ2OjiwG7k94g4KUUgX9aPqv0gJiQ5qpGEnYh9YspNoiXqprM3UQqXxXF6wWQH3c9D6v60JJccb_tYrZcW2Pa3WZ5FFIgJqFiHl-aHuYx55LCi8"/>
+<p class="text-sm font-medium text-subtext-light dark:text-subtext-dark mt-2">Jira</p>
+</div>
+<div class="flex flex-col items-center gap-2 text-center p-4 w-28 h-28 justify-center rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors">
+<img class="h-10 object-contain" data-alt="Figma Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh7pEJvRg6-l4Vd3Z2dVc14pK3cmhUn3A5Lx6-ErxFDNiKL-n3IwTxEX2u9e3Lb7UpZ5-gh-ICF6DU30yadpMWZoPeZwtQEBmCpcUFOF53Ur4oNZhPTN7Q9VPtqyGxF01nJUP6VmHXoa5ODfU8MvoCsNz6nsQkqqaA5eVKaBA-IT8fr7XfJox_Z1lcHDijMerpzBldrT17BMW5xjvOcA8c5v6Ec0LrhENfiZXPMmu6TuDUoCHAwDh_HV74Tn-xKRw-I-imE89h6gQ"/>
+<p class="text-sm font-medium text-subtext-light dark:text-subtext-dark mt-2">Figma</p>
+</div>
+<div class="flex flex-col items-center gap-2 text-center p-4 w-28 h-28 justify-center rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors">
+<img class="h-10 object-contain" data-alt="Tableau Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2qbXj6F010digxRARDnE2rMN7JPxSg1Nv4jUXe2vTWRRw9ZLY3iIWpHYRbeVAeErGs72XoGBffoyTVrDM5LpNevT76vH3M0yeRiHQTdxdIVRmZkJk3uGN-a0YesQ12fvUBuat7zI_JqVQzRuopX1iHF-rFTq5RkltFu0rAM2sTbIRAYR5DGL3ugEFFIqJ8JbbTmH8r7AxyGWvwBQyMU44l_RFQDH7wkfgAt2_z90gweLcuEzrqiA-uwv_iBCDxY24z3XfYcMC-vs"/>
+<p class="text-sm font-medium text-subtext-light dark:text-subtext-dark mt-2">Tableau</p>
+</div>
+<div class="flex flex-col items-center gap-2 text-center p-4 w-28 h-28 justify-center rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors">
+<img class="h-10 object-contain" data-alt="MS Visio Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDevUKQBhSVrC1axoJ8Qqh5MaYSAaE8-7fM8HclmncF_d8vZprvx_6knn8B139UP6ZpCa1k84QMSoUzGwZHpC709Bq8wR7ICoks3RE-3CkhdDyPcdeLUbg84hBVs8z_0MtiG9dkoi-BywXmP8DnT9F5YhBUE9zsF1T4bXWj15VHL7zo-FFkLbyD-NkyvhoaUTUeEMVjIjQxRGkMGE-rDKr0lpuFYvCmpuYr8THrom5MDiElw1v6yd39FI2Hyf2E_NImXFigd2QJC1s"/>
+<p class="text-sm font-medium text-subtext-light dark:text-subtext-dark mt-2">MS Visio</p>
+</div>
+<div class="flex flex-col items-center gap-2 text-center p-4 w-28 h-28 justify-center rounded-lg hover:bg-background-light dark:hover:bg-background-dark transition-colors">
+<img class="h-10 object-contain" data-alt="Notion Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyRqJiAB18D8kIHarFEK2BPjkDOjXuMIg5JvDvltNn3wFis43_fIQsReYNrpRbz0T_81SjaAxtq6m6WC1WQpC9DpDaOTZr7n419pOtRheGC4xgdqAJmRzWRWtPmqI0YsF3IUfMrBgs3StqTvzNJV1u6oyIRlmw9vfKWiu0QgF7jJoYGBe9sT656RAjNtMTrEj5zoQxyPep_d2XN8k8gNkdRybd6Yq7mQ_58IbV9qQpu8Eh8NM_39pyPYNilvXJUnOgJU0uVSnC1rQ"/>
+<p class="text-sm font-medium text-subtext-light dark:text-subtext-dark mt-2">Notion</p>
+</div>
+</div>
+</section>
+<section class="mt-4 text-center">
+<button class="flex min-w-[160px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-accent text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-colors mx-auto">
+<span class="truncate">View My Projects</span>
+<span class="material-symbols-outlined ml-2">arrow_forward</span>
+</button>
+</section>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>

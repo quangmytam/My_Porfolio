@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>John Doe - Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#135bec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101622",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+    <script>
+        function toggleTheme() {
+            document.documentElement.classList.toggle('dark');
+        }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-8 md:px-12 lg:px-20 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-4 sm:px-6 lg:px-10 py-3 bg-background-light dark:bg-background-dark">
+<div class="flex items-center gap-4 text-slate-800 dark:text-slate-200">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.5563 34.1455V13.8546C39.5563 15.708 36.8773 17.3437 32.7927 18.3189C30.2914 18.916 27.263 19.2655 24 19.2655C20.737 19.2655 17.7086 18.916 15.2073 18.3189C11.1227 17.3437 8.44365 15.708 8.44365 13.8546V34.1455C8.44365 35.9988 11.1227 37.6346 15.2073 38.6098C17.7086 39.2069 20.737 39.5564 24 39.5564C27.263 39.5564 30.2914 39.2069 32.7927 38.6098C36.8773 37.6346 39.5563 35.9988 39.5563 34.1455Z"></path>
+<path clip-rule="evenodd" d="M10.4485 13.8519C10.4749 13.9271 10.6203 14.246 11.379 14.7361C12.298 15.3298 13.7492 15.9145 15.6717 16.3735C18.0007 16.9296 20.8712 17.2655 24 17.2655C27.1288 17.2655 29.9993 16.9296 32.3283 16.3735C34.2508 15.9145 35.702 15.3298 36.621 14.7361C37.3796 14.246 37.5251 13.9271 37.5515 13.8519C37.5287 13.7876 37.4333 13.5973 37.0635 13.2931C36.5266 12.8516 35.6288 12.3647 34.343 11.9175C31.79 11.0295 28.1333 10.4437 24 10.4437C19.8667 10.4437 16.2099 11.0295 13.657 11.9175C12.3712 12.3647 11.4734 12.8516 10.9365 13.2931C10.5667 13.5973 10.4713 13.7876 10.4485 13.8519ZM37.5563 18.7877C36.3176 19.3925 34.8502 19.8839 33.2571 20.2642C30.5836 20.9025 27.3973 21.2655 24 21.2655C20.6027 21.2655 17.4164 20.9025 14.7429 20.2642C13.1498 19.8839 11.6824 19.3925 10.4436 18.7877V34.1275C10.4515 34.1545 10.5427 34.4867 11.379 35.027C12.298 35.6207 13.7492 36.2054 15.6717 36.6644C18.0007 37.2205 20.8712 37.5564 24 37.5564C27.1288 37.5564 29.9993 37.2205 32.3283 36.6644C34.2508 36.2054 35.702 35.6207 36.621 35.027C37.4573 34.4867 37.5485 34.1546 37.5563 34.1275V18.7877ZM41.5563 13.8546V34.1455C41.5563 36.1078 40.158 37.5042 38.7915 38.3869C37.3498 39.3182 35.4192 40.0389 33.2571 40.5551C30.5836 41.1934 27.3973 41.5564 24 41.5564C20.6027 41.5564 17.4164 41.1934 14.7429 40.5551C12.5808 40.0389 10.6502 39.3182 9.20848 38.3869C7.84205 37.5042 6.44365 36.1078 6.44365 34.1455L6.44365 13.8546C6.44365 12.2684 7.37223 11.0454 8.39581 10.2036C9.43325 9.3505 10.8137 8.67141 12.343 8.13948C15.4203 7.06909 19.5418 6.44366 24 6.44366C28.4582 6.44366 32.5797 7.06909 35.657 8.13948C37.1863 8.67141 38.5667 9.3505 39.6042 10.2036C40.6278 11.0454 41.5563 12.2684 41.5563 13.8546Z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">John Doe - ITBA &amp; Researcher</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-slate-800 dark:text-slate-200 text-sm font-medium leading-normal" href="index.html">Home</a>
+<a class="text-slate-800 dark:text-slate-200 text-sm font-medium leading-normal" href="about.html">About</a>
+<a class="text-primary dark:text-primary text-sm font-bold leading-normal" href="portfolio.html">Portfolio</a>
+<a class="text-slate-800 dark:text-slate-200 text-sm font-medium leading-normal" href="contact.html">Contact</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Get In Touch</span>
+</button>
+<button onclick="toggleTheme()" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Toggle Theme</span>
+</button>
+</div>
+</header>
+<main class="flex-1">
+<div class="flex flex-wrap justify-between gap-3 p-4 mt-8">
+<div class="flex min-w-72 flex-col gap-3">
+<p class="text-slate-900 dark:text-slate-100 text-4xl font-black leading-tight tracking-[-0.033em]">My Work</p>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal">A curated collection of my projects, research, and case studies.</p>
+</div>
+</div>
+<div class="flex gap-2 p-3 flex-wrap pr-4 border-b border-slate-200 dark:border-slate-800">
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 px-4">
+<p class="text-primary text-sm font-medium leading-normal">All</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-100 dark:bg-slate-800 px-4">
+<p class="text-slate-800 dark:text-slate-200 text-sm font-medium leading-normal">Projects</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-100 dark:bg-slate-800 px-4">
+<p class="text-slate-800 dark:text-slate-200 text-sm font-medium leading-normal">Research Papers</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-100 dark:bg-slate-800 px-4">
+<p class="text-slate-800 dark:text-slate-200 text-sm font-medium leading-normal">Case Studies</p>
+</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+<div class="flex flex-col gap-3 pb-3 rounded-lg bg-white dark:bg-slate-900/50 shadow-sm overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-[16/10] bg-cover" data-alt="Screenshot of a retail analytics dashboard showing charts and graphs" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDiPXAuD-xUvVxjw4AP4-BvDhDit5WrITQCPAthAB343uBUruoGFH253nsVF-RKYkZPFkxCSFV90OECJgIeRe6yPfmKUYJmQ5woIO5sgvpLL6HbhQZtggivm_9fd2RYJPwzfHeiTsp11ncDCRAip0Q7JWFwUnppWtJ_SeR_z9NxX9khid3ylUBmR2qacEpBBKfQfQoB4XYkjuRmsGMiaSwnlrQBX544eftJcY7aju3r5UNwrAhB9_PSgpFLKJWjHaalLhfRHINh_9Q');"></div>
+<div class="p-4 flex flex-col flex-1">
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-normal">Retail Analytics Dashboard</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal mt-1">A BI dashboard for tracking sales and inventory.</p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="text-xs font-medium text-primary bg-primary/20 rounded-full px-2 py-1">Data Analysis</span>
+<span class="text-xs font-medium text-primary bg-primary/20 rounded-full px-2 py-1">BI</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg bg-white dark:bg-slate-900/50 shadow-sm overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-[16/10] bg-cover" data-alt="Abstract graphic representing user behavior data points" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAwrWKO3YP3XwEoO-_xznmEcynUYhcyzYPQfB6tp8zeBv1k02BPOtaJq1bPMRk1DJKSlHmHdCajWC49yrYJDDh6rf_9MyfN5y_cYIK77-G2Q6hDfP-cU1uEEjvn__F-ZC5flFy7WI50_rQE1j_iLoX2r-Q9HJh6APOylmOgopK0F3h_tDtZK4zl7skUIHbNL9w1k6zVSa9u3lWbW9w45kC4_JTYSXaYKWwmx-bGAfM6cEroenefX3ZIkQDEqUo88CJfLQISxPS0q_s');"></div>
+<div class="p-4 flex flex-col flex-1">
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-normal">User Behavior Study</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal mt-1">Qualitative research on user adoption of new features.</p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="text-xs font-medium text-primary bg-primary/20 rounded-full px-2 py-1">Qualitative Research</span>
+<span class="text-xs font-medium text-primary bg-primary/20 rounded-full px-2 py-1">UX</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg bg-white dark:bg-slate-900/50 shadow-sm overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-[16/10] bg-cover" data-alt="Wireframes and UI designs for an e-commerce platform" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDkfbDwBpAes61C7Pn4rlwvEfZBTiwF0eX2x_Jzo9TPqoQ7---3obnbh5IPXd8tIhqvuwHsIME1Pp-5Eq98vM1gPubKmzeV6mk3u5O8l2Na-ekXBQ_GuxP_2wd6F91_rhqbtLuL31OtB_Tt50_Zlv4IeMHvPRhNTVsX7l_e7WF425ptfM9niXVfUrrboEIg7np6OkzQLt8eb7x64C_PTKOnb85q_Xx4mk18qlKO3IX6DnOxQE1mkBv3ejMHKqQKnqIb4sfR7lapvWQ');"></div>
+<div class="p-4 flex flex-col flex-1">
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-normal">E-commerce Platform Overhaul</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal mt-1">A case study on improving conversion rates.</p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="text-xs font-medium text-primary bg-primary/20 rounded-full px-2 py-1">Case Study</span>
+<span class="text-xs font-medium text-primary bg-primary/20 rounded-full px-2 py-1">UI/UX</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg bg-white dark:bg-slate-900/50 shadow-sm overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-[16/10] bg-cover" data-alt="Flowchart illustrating a supply chain model" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCV_KOTMtI888PdPMBRpeVcl4t8zP9U7BHN1TF6WC7VAoWvaAzBf0aMKaxxhad1fwp_ZoocK4-W3saqUsHmsflzB8reLFy9k6ofpsDHKX0qnRFPt8ibzFW33SWSccLQOPZA8H-lAWuWANsetP6WKY9kRY-urWNJdaHZ4rtoMK6CYYsnhW1Qt71OnaRkeHBw8Ms19AinWWXrFuCk5u-doeacDTRw4w7mKtRpkc1fQDzHZcyA_yPRZKDesVKhLQ7T7ny2tVl48uX4y_Q');"></div>
+<div class="p-4 flex flex-col flex-1">
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-normal">Supply Chain Optimization Model</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal mt-1">A predictive model to reduce logistics costs.</p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="text-xs font-medium text-primary bg-primary/20 rounded-full px-2 py-1">Predictive Modeling</span>
+<span class="text-xs font-medium text-primary bg-primary/20 rounded-full px-2 py-1">Logistics</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg bg-white dark:bg-slate-900/50 shadow-sm overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-[16/10] bg-cover" data-alt="Artistic representation of artificial intelligence networks" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA0TIfoDydGX3VAAuo-0eRkAH1kehyS1PlkZLTE_jTQgS-kyF1hsUukTIxwrFOw7iEwbDwuo6t6NL_XL4Kefu3jgYlaots5Velfide3T68hB7DKsr9Df5tUJav5Vl6bcEotwdc7wWZjQVAB6leVscqXiCCrtxlRU7tqjhwOv6o_jEnoq-H2H6K8ZRIblgj1ybM7u0gvimcCabuDJskfE3ifHwdhdb8amx5Wy-kTsOHN-syl9aKmg9K6LvjntkdfPMsqpGeGlNAsXZ8');"></div>
+<div class="p-4 flex flex-col flex-1">
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-normal">The Impact of AI on UX</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal mt-1">A published paper on machine learning in design.</p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="text-xs font-medium text-primary bg-primary/20 rounded-full px-2 py-1">Research Paper</span>
+<span class="text-xs font-medium text-primary bg-primary/20 rounded-full px-2 py-1">AI</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 rounded-lg bg-white dark:bg-slate-900/50 shadow-sm overflow-hidden transition-all hover:shadow-lg hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-[16/10] bg-cover" data-alt="Infographic showing customer personas and segments" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAPY44a8BUL8IZQwzGPbvANXIaXKTYYHkc-xtQzFZixTOzojmOS-luL1uEPjiejQfpDsF-8_fROohetnZzDX-0nzQhZhkyLydc3cuRRTS8WUTCZENEuN4E-DpQjrn2-t7uYp68ru62mn7uHu6mRyZ1d26d_YGTsC7-yINrmTESpvOoTPLvrer1gEvYkyykCzeXvdjOX-3hSrVPcaOXiqrouRpBvRC41sqG_3lSQxuV7vHj5eAw-kFItaYmn4lnMJHRRRleTVXe_v7Q');"></div>
+<div class="p-4 flex flex-col flex-1">
+<p class="text-slate-900 dark:text-slate-100 text-base font-bold leading-normal">Customer Segmentation Analysis</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal mt-1">A case study identifying key customer personas.</p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="text-xs font-medium text-primary bg-primary/20 rounded-full px-2 py-1">Case Study</span>
+<span class="text-xs font-medium text-primary bg-primary/20 rounded-full px-2 py-1">Marketing</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-center p-4 mt-8">
+<a class="flex size-10 items-center justify-center text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined text-lg">chevron_left</span>
+</a>
+<a class="text-sm font-bold leading-normal tracking-[0.015em] flex size-10 items-center justify-center text-white bg-primary rounded-full" href="#">1</a>
+<a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-slate-800 dark:text-slate-200 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800" href="#">2</a>
+<a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-slate-800 dark:text-slate-200 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800" href="#">3</a>
+<span class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-slate-500 dark:text-slate-400 rounded-full">...</span>
+<a class="flex size-10 items-center justify-center text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</a>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>
