@@ -1,2 +1,2 @@
 # My_Porfolio
-This is my information about me
+This is the information about me
