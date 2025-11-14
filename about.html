@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alex Doe - IT Business Analyst &amp; Researcher</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+    <script>
+      function toggleTheme() {
+        document.documentElement.classList.toggle('dark');
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111318] dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<div class="flex flex-col lg:flex-row gap-8">
+<!-- Left Column - Sticky Sidebar -->
+<aside class="lg:w-1/4 lg:sticky lg:top-10 h-full">
+<div class="flex h-full min-h-[700px] flex-col justify-between bg-white dark:bg-background-dark/50 p-4 rounded-xl border border-gray-200 dark:border-gray-800">
+<div class="flex flex-col gap-4">
+<div class="flex gap-3 items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Professional headshot of Alex Doe" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA45J_T5emj7LwBshaIHW294RNsn6d_IiB5jM-fUh0SKCjVKK9LdjMHd415ogQdnpVefZZqKjxcC-0Mgh20LllW_bfcfT9irdvr9hU5kiDgrNiNfhDUPTVlEIiFPKpaS9hco2qBNw7_d-xLlE05T2LpTzSg_QjDo9yMHblJ-uItqOLUlpc4BPwfBFJu6fJqJyxB5eM9R19NPm7rf5AbGpSgkL9e63XMBOpxUwV_a-lw1dHbsknn8PbURNoF_rsNyaqOoC2inS6Bca8");'></div>
+<div class="flex flex-col">
+<h1 class="text-[#111318] dark:text-white text-base font-medium leading-normal">Alex Doe</h1>
+<p class="text-[#616f89] dark:text-gray-400 text-sm font-normal leading-normal">ITBA &amp; Researcher</p>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/20 dark:bg-primary/30" href="index.html">
+<span class="material-symbols-outlined text-primary dark:text-white" style="font-variation-settings: 'FILL' 1;">home</span>
+<p class="text-primary dark:text-white text-sm font-medium leading-normal">Home</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/10" href="about.html">
+<span class="material-symbols-outlined text-[#111318] dark:text-gray-300">person</span>
+<p class="text-[#111318] dark:text-gray-300 text-sm font-medium leading-normal">About</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/10" href="skills.html">
+<span class="material-symbols-outlined text-[#111318] dark:text-gray-300">construction</span>
+<p class="text-[#111318] dark:text-gray-300 text-sm font-medium leading-normal">Skills</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/10" href="portfolio.html">
+<span class="material-symbols-outlined text-[#111318] dark:text-gray-300">folder</span>
+<p class="text-[#111318] dark:text-gray-300 text-sm font-medium leading-normal">Portfolio</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-white/10" href="contact.html">
+<span class="material-symbols-outlined text-[#111318] dark:text-gray-300">mail</span>
+<p class="text-[#111318] dark:text-gray-300 text-sm font-medium leading-normal">Contact</p>
+</a>
+</div>
+<button onclick="toggleTheme()" class="flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Toggle Theme</span>
+</button>
+</div>
+</div>
+</aside>
+<!-- Right Column - Main Content -->
+<main class="lg:w-3/4 flex flex-col gap-8">
+<section class="bg-white dark:bg-background-dark/50 p-4 rounded-xl border border-gray-200 dark:border-gray-800">
+<div class="flex w-full flex-col gap-4 @container sm:flex-row sm:justify-between sm:items-center p-4">
+<div class="flex gap-4 items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32" data-alt="Professional headshot of Alex Doe" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCb9weCYKB73Y4XF_0uZx11fV5buLyKBQiinRvV0ruoc6x22ScCMwpl6UT-MZEx4dnPiyK-g8i7ZX-ZMzw8cTNLT9mNgRevVJN9PXDt22EQlkX3Q7fejtk2HXfqBvzHlHhgZKcGu4DCzTSVMJX6Ff7HPCyZii3MJgzrZIMgNNQDYgj4nH-_xhCO3kY2NMQsurHcl1bGIm84FRN0thhTx2pmE-UARdkRrHAPD2BYZfqhZg0CVwFFdSgGlh-utOHKfxYfP37NfkDTbcQ");'></div>
+<div class="flex flex-col justify-center gap-1">
+<p class="text-[#111318] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">Alex Doe</p>
+<p class="text-primary dark:text-primary/90 text-base font-medium leading-normal">IT Business Analyst &amp; Researcher</p>
+<p class="text-[#616f89] dark:text-gray-400 text-base font-normal leading-normal mt-1">Bridging the gap between technology and business strategy through meticulous analysis and innovative research.</p>
+</div>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] w-full max-w-[480px] sm:w-auto">
+<span class="truncate">Download CV</span>
+</button>
+</div>
+</section>
+<section class="bg-white dark:bg-background-dark/50 p-4 rounded-xl border border-gray-200 dark:border-gray-800" id="experience">
+<h2 class="text-[#111318] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Professional Experience</h2>
+<div class="grid grid-cols-[40px_1fr] gap-x-2 px-4">
+<div class="flex flex-col items-center gap-1 pt-3">
+<div class="flex items-center justify-center size-10 bg-primary/20 dark:bg-primary/30 rounded-full">
+<span class="material-symbols-outlined text-primary dark:text-white">business_center</span>
+</div>
+<div class="w-[1.5px] bg-[#dbdfe6] dark:bg-gray-700 h-full grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-[#111318] dark:text-white text-base font-medium leading-normal">Senior Business Analyst</p>
+<p class="text-[#616f89] dark:text-gray-400 text-base font-normal leading-normal">Tech Solutions Inc. | 2020 - Present</p>
+<ul class="list-disc pl-5 mt-2 text-[#616f89] dark:text-gray-400 text-sm space-y-1">
+<li>Led requirement gathering for enterprise-level software projects.</li>
+<li>Developed detailed business process models and workflows.</li>
+<li>Facilitated communication between stakeholders and development teams.</li>
+</ul>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-[1.5px] bg-[#dbdfe6] dark:bg-gray-700 h-full"></div>
+<div class="flex items-center justify-center size-10 bg-primary/20 dark:bg-primary/30 rounded-full">
+<span class="material-symbols-outlined text-primary dark:text-white">science</span>
+</div>
+<div class="w-[1.5px] bg-[#dbdfe6] dark:bg-gray-700 h-full grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-[#111318] dark:text-white text-base font-medium leading-normal">Research Assistant</p>
+<p class="text-[#616f89] dark:text-gray-400 text-base font-normal leading-normal">University of Innovation | 2018 - 2020</p>
+<ul class="list-disc pl-5 mt-2 text-[#616f89] dark:text-gray-400 text-sm space-y-1">
+<li>Conducted literature reviews and data analysis for AI ethics research.</li>
+<li>Co-authored two peer-reviewed articles on machine learning bias.</li>
+</ul>
+</div>
+<div class="flex flex-col items-center gap-1 pb-3">
+<div class="w-[1.5px] bg-[#dbdfe6] dark:bg-gray-700 h-full"></div>
+<div class="flex items-center justify-center size-10 bg-primary/20 dark:bg-primary/30 rounded-full">
+<span class="material-symbols-outlined text-primary dark:text-white">monitoring</span>
+</div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-[#111318] dark:text-white text-base font-medium leading-normal">Junior IT Analyst</p>
+<p class="text-[#616f89] dark:text-gray-400 text-base font-normal leading-normal">Data Corp | 2016 - 2018</p>
+<ul class="list-disc pl-5 mt-2 text-[#616f89] dark:text-gray-400 text-sm space-y-1">
+<li>Provided data analysis and reporting for marketing campaigns.</li>
+<li>Assisted in the maintenance of company databases.</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="bg-white dark:bg-background-dark/50 p-4 rounded-xl border border-gray-200 dark:border-gray-800" id="skills">
+<h2 class="text-[#111318] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Skills &amp; Expertise</h2>
+<div class="p-4 space-y-4">
+<div>
+<h3 class="font-semibold mb-2 text-gray-700 dark:text-gray-300">Technical Skills</h3>
+<div class="flex flex-wrap gap-2">
+<span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm font-medium px-3 py-1 rounded-full">SQL</span>
+<span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm font-medium px-3 py-1 rounded-full">Python</span>
+<span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm font-medium px-3 py-1 rounded-full">Tableau</span>
+<span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm font-medium px-3 py-1 rounded-full">JIRA</span>
+<span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm font-medium px-3 py-1 rounded-full">Power BI</span>
+<span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm font-medium px-3 py-1 rounded-full">Agile Methodologies</span>
+</div>
+</div>
+<div>
+<h3 class="font-semibold mb-2 text-gray-700 dark:text-gray-300">Business Analysis Competencies</h3>
+<div class="flex flex-wrap gap-2">
+<span class="bg-primary/20 dark:bg-primary/30 text-primary dark:text-primary/95 text-sm font-medium px-3 py-1 rounded-full">Requirements Elicitation</span>
+<span class="bg-primary/20 dark:bg-primary/30 text-primary dark:text-primary/95 text-sm font-medium px-3 py-1 rounded-full">Process Modeling (BPMN)</span>
+<span class="bg-primary/20 dark:bg-primary/30 text-primary dark:text-primary/95 text-sm font-medium px-3 py-1 rounded-full">Stakeholder Management</span>
+<span class="bg-primary/20 dark:bg-primary/30 text-primary dark:text-primary/95 text-sm font-medium px-3 py-1 rounded-full">Gap Analysis</span>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white dark:bg-background-dark/50 p-4 rounded-xl border border-gray-200 dark:border-gray-800" id="research">
+<h2 class="text-[#111318] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Research Interests &amp; Projects</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4">
+<div class="bg-background-light dark:bg-background-dark p-4 rounded-lg border border-gray-200 dark:border-gray-800">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary">psychology</span>
+<h3 class="font-semibold text-base text-[#111318] dark:text-white">AI Ethics and Bias</h3>
+</div>
+<p class="text-sm text-[#616f89] dark:text-gray-400">Investigating algorithmic fairness and the societal impact of artificial intelligence systems.</p>
+</div>
+<div class="bg-background-light dark:bg-background-dark p-4 rounded-lg border border-gray-200 dark:border-gray-800">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary">model_training</span>
+<h3 class="font-semibold text-base text-[#111318] dark:text-white">Predictive Analytics in Business</h3>
+</div>
+<p class="text-sm text-[#616f89] dark:text-gray-400">Applying machine learning models to forecast business trends and optimize strategic decisions.</p>
+</div>
+</div>
+</section>
+<section class="bg-white dark:bg-background-dark/50 p-8 rounded-xl border border-gray-200 dark:border-gray-800 text-center" id="contact">
+<h2 class="text-[#111318] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">Get in Touch</h2>
+<p class="text-[#616f89] dark:text-gray-400 mt-2 max-w-md mx-auto">I'm always open to discussing new projects, research ideas, or opportunities to collaborate. Feel free to connect with me.</p>
+<div class="mt-6 flex justify-center items-center gap-4">
+<a class="flex items-center justify-center h-10 px-4 bg-primary text-white text-sm font-bold rounded-lg" href="#">
+<span class="material-symbols-outlined mr-2">mail</span>
+<span>Email Me</span>
+</a>
+<a class="flex items-center justify-center h-10 px-4 bg-gray-200 dark:bg-gray-700 text-[#111318] dark:text-white text-sm font-bold rounded-lg" href="#">
+<span>LinkedIn</span>
+</a>
+</div>
+</section>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>
